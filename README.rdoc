@@ -1,0 +1,1 @@
+Simple chat app using <a href='https://github.com/ryanb/private_pub'>Private Pub</a> from <a href='https://github.com/ryanb'>Ryan Bates</a>
