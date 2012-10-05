@@ -1,12 +1,15 @@
-<h1>Chat</h1>
+<div class='well'>
 
-<ul id="chat">
-  <%= render @messages %>
-</ul>
+	<ul id="chat" >
+  	<%= render @messages %>
+	</ul>
 
-<%= form_for Message.new, remote: true do |f| %>
-  <%= f.text_field :content %>
-  <%= f.submit "Send" %>
-<% end %>
+</div>
 
+<div class='well' id='message'>
+	<%= form_for Message.new, remote: true do |f| %>
+	  <%= f.text_field :content, :class => 'input-small input-xxlarge', :placeholder => 'digite sua mensagem' %>
+	  <%= f.submit "Enviar", :class => 'btn btn-success' %>
+	<% end %>
+</div>
 <%= subscribe_to "/messages/new" %>

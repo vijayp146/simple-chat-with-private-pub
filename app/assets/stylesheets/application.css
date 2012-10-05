@@ -11,3 +11,7 @@
  *= require_self
  *= require_tree .
  */
+
+.space { margin-right: 5px; }
+
+div#message { text-align: center; }

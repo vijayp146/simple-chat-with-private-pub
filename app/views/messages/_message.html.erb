@@ -1,4 +1,6 @@
 <li>
-  <span><%= message.created_at.strftime("%H:%M") %></span>
+  <span class="label label-info space">
+  	<%= message.created_at.strftime("%H:%M") %>
+  </span>
   <%= message.content %>
 </li>
